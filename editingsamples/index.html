@@ -12,6 +12,10 @@ body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.65 "Sour
 h1{font-weight:600;font-size:clamp(2rem,5vw,3rem);line-height:1.1;margin:0 0 1rem;letter-spacing:-.01em}
 h2{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.35rem;line-height:1.3;margin:0 0 .4rem}
 h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.9rem;font-weight:600;color:var(--muted);margin:0 0 .6rem}
+.byline{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;margin:0 0 1.75rem;display:flex;flex-wrap:wrap;gap:.35rem 1.25rem;align-items:baseline}
+.byline .name{font-weight:600}
+.byline a{color:var(--ins);text-underline-offset:3px}
+.byline a:focus-visible{outline:2px solid var(--ins);outline-offset:2px}
 .lede{max-width:40rem;margin:0 0 1.5rem;font-size:1.15rem}
 .legend{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.9rem;display:flex;gap:1.25rem;flex-wrap:wrap;margin:0}
 .sample{padding:3.5rem 0;border-bottom:1px solid var(--rule)}
@@ -52,6 +56,7 @@ sup.ref a:focus-visible,.notes li:target{outline:2px solid var(--ins);outline-of
 @media print{.switch{display:none}}
 </style></head><body>
 <header class="top">
+<p class="byline"><span class="name">Shruti Singhal</span><a href="mailto:shr.singhal94@gmail.com">shr.singhal94@gmail.com</a></p>
 <h1>Academic editing samples</h1>
 <p class="lede">Short academic edit excerpts. Each one shows my changes and the queries I left for the author.</p>
 <p class="legend" aria-hidden="true"><ins class="ins">Inserted</ins><del class="del">Deleted</del><span class="q">Queried</span></p>
