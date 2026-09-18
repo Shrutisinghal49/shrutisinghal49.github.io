@@ -4,9 +4,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#F5F7FA;--ink:#1C2433;--muted:#566072;--ins:#1E5AA0;--del:#A1392F;--rule:#D6DCE4;--hl:#FFEFA6;--note:#FFFFFF}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141920;--ink:#E4E8EE;--muted:#9AA4B3;--ins:#86B6F0;--del:#EE8C80;--rule:#2B3440;--hl:rgba(255,214,90,.24);--note:#1B222C}}
-:root[data-theme="dark"]{--paper:#141920;--ink:#E4E8EE;--muted:#9AA4B3;--ins:#86B6F0;--del:#EE8C80;--rule:#2B3440;--hl:rgba(255,214,90,.24);--note:#1B222C}
+:root{--paper:#FFFFFF;--ink:#000000;--muted:#000000;--ins:#C2410C;--del:#000000;--rule:#F2B98C;--hl:#FFE4CC;--note:#FFFFFF;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:1.0625rem/1.65 "Source Serif 4",Georgia,"Times New Roman",serif}
 .top,main{max-width:62rem;margin:0 auto;padding:0 1.5rem}
@@ -20,10 +18,10 @@ h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.9rem;font-weight:
 .gap{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
 .sample:last-child{border-bottom:0}
 .brief{max-width:40rem;margin:0;color:var(--muted);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;line-height:1.55}
-.switch{display:inline-flex;margin:1.5rem 0 1.25rem;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.switch{display:inline-flex;margin:1.5rem 0 1.25rem;border:1px solid var(--ins);border-radius:6px;overflow:hidden}
 .switch button{font:500 .85rem/1 "IBM Plex Sans",system-ui,sans-serif;background:transparent;color:var(--ink);border:0;padding:.6rem .9rem;cursor:pointer}
-.switch button+button{border-left:1px solid var(--rule)}
-.switch button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.switch button+button{border-left:1px solid var(--ins)}
+.switch button[aria-pressed="true"]{background:var(--ins);color:#FFFFFF}
 .switch button:focus-visible{outline:2px solid var(--ins);outline-offset:-2px}
 .work{display:grid;grid-template-columns:minmax(0,38rem) minmax(0,17rem);gap:2.5rem;align-items:start}
 .text p{margin:0 0 1.1rem}
